@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operation Indicator</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="modernizr-custom.js"></script>
+        <link href="issue.css" rel="stylesheet">
+        <!--控制下划线、颜色-->
+        <style type="text/css">
+            a:link { text-decoration: none;color: black}
+            a:active { text-decoration:blink}
+            a:hover { text-decoration:none;color: red}
+            a:visited { text-decoration: none;color: black}
+        </style>
+    </head>
+
+    <body>
+    <div id="ml-menu1" class="treeMenu">
+        <div class="menu__wrap">
+            <ul data-menu="main" class="menu__level menu__level--current">
+                <li style="animation-delay: 0ms;" class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-1" href="#">1. 空调不启动排除方法</a></li>
+                <li style="animation-delay: 20ms;" class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-2" href="#">2. 空调上电立刻跳闸</a></li>
+                <li style="animation-delay: 40ms;" class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-3" href="#">3. 空调上电后运行十几秒或几分钟后跳闸</a></li>
+                <li style="animation-delay: 60ms;" class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-4" href="#">4. 制热不良，没有故障代码显示</a></li>
+                <li style="animation-delay: 80ms;" class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-5" href="#">5. 制冷不良，没有故障代码显示</a></li>
+                <li style="animation-delay: 100ms;" class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-6" href="#">6. 模块保护、模块温度过高、压缩机失步（H5）故障</a></li>
+            </ul>
+            <!-- Submenu 1 *********************************************************** -->
+            <ul data-menu="submenu-1" class="menu__level">
+                <li style="animation-delay: 0ms;" class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-1-1" href="#">★蜂鸣器不响，显示灯不亮</a></li>
+                <li style="animation-delay: 20ms;" class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-1-2" href="#">★蜂鸣器响，显示灯不亮</a></li>
+                <li style="animation-delay: 40ms;" class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-1-3" href="#">★蜂鸣器响，显示灯亮，但遥控器不起作用</a></li>
+            </ul>
+            <!-- 蜂鸣器不响，显示灯不亮 -->
+            <ul data-menu="submenu-1-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-1-1-1" href="#">★测量电源电压：不能低于额定电压的85%</a></li>
+            </ul>
+            <ul data-menu="submenu-1-1-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-1-1-1-1" href="#">★电压正常。断电，检查内机接线板上及内机主板上的接线是否正确</a></li>
+            </ul>
+            <ul data-menu="submenu-1-1-1-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-1-1-1-1-1" href="#">★显示板插线正常后，上电按内机主板上的AUTO键，观察内机是否可以运行</a></li>
+            </ul>
+            <ul data-menu="submenu-1-1-1-1-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★内机可运行，更换显示板</a></li>
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★内机不可运行，更换内机主板</a></li>
+            </ul>
+            <!-- 蜂鸣器响，显示灯不亮 -->
+            <ul data-menu="submenu-1-2" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-1-2-1" href="#">★使用正常的遥控器按灯光键遥控内机</a></li>
+            </ul>
+            <ul data-menu="submenu-1-2-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★显示灯亮，机子正常</a></li>
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-1-2-1-1" href="#">★内机发出“滴”的响声，显示灯不亮。断电，检查显示板与内机主板上的插线是否正确</a></li>
+            </ul>
+            <ul data-menu="submenu-1-2-1-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-1-2-1-1-1" href="#">★显示板插线正常后，上电按内机主板上的AUTO键，观察内机是否可以运行</a></li>
+            </ul>
+            <ul data-menu="submenu-1-2-1-1-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★内机可运行，更换显示板</a></li>
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★内机不可运行，更换内机主板</a></li>
+            </ul>
+            <!-- 蜂鸣器响，显示灯亮，但遥控器不起作用 -->
+            <ul data-menu="submenu-1-3" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-1-3-1" href="#">★检查遥控器是否正常,可能原因：<br>
+                    ◆遥控器是否装电池；<br>
+                    ◆遥控器电量是否足够；<br>
+                    ◆遥控器是否配套空调。</a></li>
+            </ul>
+            <ul data-menu="submenu-1-3-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-1-3-1-1" href="#">★故障未排除，检查空调显示板或内机板是否遮挡</a></li>
+            </ul>
+            <ul data-menu="submenu-1-3-1-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-1-3-1-1-1" href="#">★故障未排除，更换遥控器</a></li>
+            </ul>
+            <ul data-menu="submenu-1-3-1-1-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-1-3-1-1-1-1" href="#">★故障未排除，更换显示板</a></li>
+            </ul>
+            <ul data-menu="submenu-1-3-1-1-1-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★故障未排除，更换内机主板</a></li>
+            </ul>
+
+            <!-- Submenu 2 *********************************************************** -->
+            <ul data-menu="submenu-2" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-2-1" href="#">★测量电源线（3根）两两是否短路；<br>
+                    ★测量内外机连接线（4根）两两之间是否短路；<br>
+                    注意：测量时需断电</a></li>
+            </ul>
+            <ul data-menu="submenu-2-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-2-1-1" href="#">★没有找到短路点，更换电源线，上电运行</a></li>
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-2-1-2-1" href="#">★如果短路，查找短路点：主要看接线板处接线是否有短路</a></li>
+            </ul>
+            <!-- 没有找到短路点，更换电源线，上电运行 -->
+            <ul data-menu="submenu-2-1-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-2-1-1-1" href="#">★仍然上电跳闸，更换内外机连接线，上电运行</a></li>
+            </ul>
+            <ul data-menu="submenu-2-1-1-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-2-1-1-1-1" href="#">★仍然上电跳闸，拆掉内外机连接线，上电</a></li>
+            </ul>
+
+            <ul data-menu="submenu-2-1-1-1-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-2-1-1-1-1-1" href="#">★不再跳闸，检查主板接线是否正确（外机供电查内机主板；内机供电查外机主板）</a></li>
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-2-1-1-1-1-1" href="#">★仍然上电跳闸，检查主板接线是否正确（外机供电查外机主板；内机供电查内机主板）</a></li>
+            </ul>
+
+
+            <ul data-menu="submenu-2-1-1-1-1-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★有接线错误或接线没插好。重新接好线，接上内外机连接线，上电</a></li>
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★接线正常，更换主板（外机供电拆更换内机主板；内机供电更换外机主板）。接上内外机连接线，上电</a></li>
+            </ul>
+            <!-- 如果短路，查找短路点：主要看接线板处接线是否有短路 -->
+            <ul data-menu="submenu-2-1-2-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★找到短路点，消除短路。上电运行</a></li>
+            </ul>
+
+            <!-- Submenu 3 *********************************************************** -->
+            <ul data-menu="submenu-3" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-3-1" href="#">★断电，检查给空调供电的电源功率和电流是否满足空调要求</a></li>
+            </ul>
+            <ul data-menu="submenu-3-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-3-1-1" href="#">★电源功率和电流满足要求。检查外机接地线是否可靠接地</a></li>
+            </ul>
+            <ul data-menu="submenu-3-1-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-3-1-1-1" href="#">★外机接地线可靠接地；拆掉电源线的地线，上电运行</a></li>
+            </ul>
+            <!-- 若接线正常，断电，拔掉外机主板上的风机线、四通阀线和电加热带接线。接好内外机连接线，上电开机运行 -->
+            <ul data-menu="submenu-3-1-1-1" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-3-1-1-1-1" href="#">★仍会跳闸，拆掉内外机连接线，只给内机供电，上电开内机送风（显示故障代码不必理会）</a></li>
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-3-1-1-1-2" href="#">★不跳闸，断电，装好电源线地线，拆掉内外机连接线的地线，上电运行</a></li>
+            </ul>
+            <!--3 仍会跳闸，拆掉内外机连接线，只给内机供电，上电开内机送风（显示故障代码不必理会 -->
+            <ul data-menu="submenu-3-1-1-1-1" class="menu__level">
+                <!-- 7 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-3-1-1-1-1-1" href="#">★仍会跳闸，断电，检查内机接线</a></li>
+                <!-- 8 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-3-1-1-1-1-2" href="#">★不跳闸，检查外机接线</a></li>
+            </ul>
+            <!--7 仍会跳闸，断电，检查内机接线 -->
+            <ul data-menu="submenu-3-1-1-1-1-1" class="menu__level">
+                <!-- 10 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-3-1-1-1-1-1-1" href="#">★若接线不对，重新接好线；上电开内机送风（显示故障代码不必理会）</a></li>
+                <!-- 13 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-3-1-1-1-1-1-2" href="#">★接线正常</a></li>
+            </ul>
+            <!-- 10若接线不对，重新接好线；上电开内机送风（显示故障代码不必理会） -->
+            <ul data-menu="submenu-3-1-1-1-1-1-1" class="menu__level">
+                <!-- 14 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★不跳闸，断电，接好内外机连接线，上电运行</a></li>
+                <!-- 15 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-3-1-1-1-1-1-2" href="#">★仍会跳闸</a></li>
+            </ul>
+            <!-- 13 接线正常 -->
+            <ul data-menu="submenu-3-1-1-1-1-1-2" class="menu__level">
+                <!-- 16 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-3-1-1-1-1-1-2-1" href="#">★断电，拔掉内机主板上的风机线和冷等离子线。上电开内机送风（显示故障代码不必理会）</a></li>
+            </ul>
+            <ul data-menu="submenu-3-1-1-1-1-1-2-1" class="menu__level">
+                <!-- 17 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★仍会跳闸，断电，更换内机主板</a></li>
+                <!-- 18 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★不跳闸，断电，依次检查或更换内机风机和冷等离子</a></li>
+            </ul>
+
+            <!--8 不跳闸，检查外机接线 -->
+            <ul data-menu="submenu-3-1-1-1-1-2" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-3-1-1-1-1-2-1" href="#">★若接线正常，断电，拔掉外机主板上的风机线、四通阀线和电加热带接线。接好内外机连接线，上电开机运行</a></li>
+            </ul>
+            <ul data-menu="submenu-3-1-1-1-1-2-1" class="menu__level">
+                <!-- 11 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★仍会跳闸，断电，更换外机主板</a></li>
+                <!-- 12 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★不跳闸，断电，依次检查或更换外机风机、四通阀或电加热带</a></li>
+            </ul>
+
+            <!--4 不跳闸，断电，装好电源线地线，拆掉内外机连接线的地线，上电运行 -->
+            <ul data-menu="submenu-3-1-1-1-2" class="menu__level">
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★不跳闸，外机泄露电流与开关不适合</a></li>
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★会跳闸，外机泄露电流与开关不适合</a></li>
+            </ul>
+
+            <!-- Submenu 4 *********************************************************** -->
+            <ul data-menu="submenu-4" class="menu__level">
+                <!-- 0 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-4-1" href="#">★是否频繁化霜影响制热效果：观察化霜时外机上结</a></li>
+                <!-- 2 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-4-2" href="#">★检查设定温度和运行模式是否正确。内机过滤网是否积满灰尘（积满灰尘需清洗过滤网）；检查内外机进风口是否被堵；内外风机是否运转正常；内风机是否被设为低风挡；可以设置为制热30℃，运行几分钟后测量内机出风口温度。</a></li>
+            </ul>
+            <!--0 是否频繁化霜影响制热效果：观察化霜时外机上结 -->
+            <ul data-menu="submenu-4-1" class="menu__level">
+                <!-- 1 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★大部分霜没有化掉。查外机压力是否足够，是否有冷媒不足</a></li>
+            </ul>
+
+            <!-- 2 检查设定温度和运行模式是否正确。内机过滤网是否积满灰尘（积满灰尘需清洗过滤网）；检查内外机进风口是否被堵；内外风机是否运转正常；内风机是否被设为低风挡；可以设置为制热30℃，运行几分钟后测量内机出风口温度。 -->
+            <ul data-menu="submenu-4-2" class="menu__level">
+                <!-- 7 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★内机出风口温度高于30℃。认为制热是正常的</a></li>
+                <!-- 8 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-4-2-2" href="#">★内机出风口温度低于30℃，检查外机风机运行是否正常，压缩机是否运行。</a></li>
+            </ul>
+            <!-- 8 内机出风口温度低于30℃，检查外机风机运行是否正常，压缩机是否运行。 -->
+            <ul data-menu="submenu-4-2-2" class="menu__level">
+                <!-- 12 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-4-2-2-1" href="#">★外风机或压缩机不运行，检查外风机或压缩机在主板上的接线是否正常或者线是否断开</a></li>
+                <!-- 9 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-4-2-2-2" href="#">★外机风机、压缩机运行。查外机压力是否足够，是否有冷媒不足</a></li>
+            </ul>
+            <!-- 12 外风机或压缩机不运行，检查外风机或压缩机在主板上的接线是否正常或者线是否断开 -->
+            <ul data-menu="submenu-4-2-2-1" class="menu__level">
+                <!-- 13 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-4-2-2-1-1" href="#">★接线正常。上电开机运行观察外机指示灯闪烁是否正常：指示灯闪烁次数是否指示有故障或限频</a></li>
+            </ul>
+            <!-- 13 接线正常。上电开机运行观察外机指示灯闪烁是否正常：指示灯闪烁次数是否指示有故障或限频 -->
+            <ul data-menu="submenu-4-2-2-1-1" class="menu__level">
+                <!-- 15 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★指示灯闪烁指示无故障和限频。检查或更换外风机或压缩机</a></li>
+                <!-- 16 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★指示灯闪烁指示有故障或限频，根据指示的故障查找原因</a></li>
+            </ul>
+
+
+            <!-- 9 外机风机、压缩机运行。查外机压力是否足够，是否有冷媒不足 -->
+            <ul data-menu="submenu-4-2-2-2" class="menu__level">
+                <!-- 3 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-4-2-2-2-1" href="#">★冷媒不足，检查内外机连接管是否被损坏是否漏气；检查连接管与内机、外机连接处是否漏气</a></li>
+                <!-- 10 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-4-2-2-2-2" href="#">★外机压力足够，没有冷媒不足。观察外机指示灯闪烁是否正常：指示灯闪烁次数是否指示有故障或限频</a></li>
+            </ul>
+            <!-- 3 冷媒不足，检查内外机连接管是否被损坏是否漏气；检查连接管与内机、外机连接处是否漏气 -->
+            <ul data-menu="submenu4-2-2-2-1" class="menu__level">
+                <!-- 4 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★连接管正常，补充或重灌冷媒</a></li>
+            </ul>
+            <!-- 10 外机压力足够，没有冷媒不足。观察外机指示灯闪烁是否正常：指示灯闪烁次数是否指示有故障或限频 -->
+            <ul data-menu="submenu4-2-2-2-2" class="menu__level">
+                <!-- 14 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★指示灯闪烁指示有故障或限频，根据指示的故障查找原因</a></li>
+                <!-- 11 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-4-2-2-2-2-1" href="#">★外机指示灯指示无故障和无限频。检查四通阀接线是否正常，测量四通阀两接线间电压是否正常（正常应为210VAC)</a></li>
+            </ul>
+            <!-- 11 外机指示灯指示无故障和无限频。检查四通阀接线是否正常，测量四通阀两接线间电压是否正常（正常应为210VAC -->
+            <ul data-menu="submenu-4-2-2-2-2-1" class="menu__level">
+                <!-- 5 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★四通阀两接线间电压正常。检查或更换四通阀</a></li>
+                <!-- 6 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★四通阀两接线间电压不正常。更换外机主板</a></li>
+            </ul>
+
+            <!-- Submenu 5 *********************************************************** -->
+            <ul data-menu="submenu-5" class="menu__level">
+                <!-- 0 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★室外温度过高，阳光直射外机导致限频；建议给外机做遮阳板</a></li>
+                <!-- 1 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-5-1" href="#">★检查设定温度和运行模式是否正确。内机过滤网是否积满灰尘（积满灰尘需清洗过滤网）；检查内外机进风口是否被堵；内外风机是否运转正常；内风机是否被设为低风挡；可以设置为制冷16℃，运行几分钟后测量内机出风口温度</a></li>
+            </ul>
+            <!--1 检查设定温度和运行模式是否正确。内机过滤网是否积满灰尘（积满灰尘需清洗过滤网）；检查内外机进风口是否被堵；内外风机是否运转正常；内风机是否被设为低风挡；可以设置为制冷16℃，运行几分钟后测量内机出风口温度 -->
+            <ul data-menu="submenu-5-1" class="menu__level">
+                <!-- 3 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★内机出风口温度低于16℃。认为制热是正常的</a></li>
+                <!-- 2 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-5-1-1" href="#">★内机出风口温度高于16℃，检查外机风机运行是否正常，压缩机是否运行</a></li>
+            </ul>
+            <!--2 内机出风口温度高于16℃，检查外机风机运行是否正常，压缩机是否运行 -->
+            <ul data-menu="submenu-5-1-1" class="menu__level">
+                <!-- 4 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-5-1-1-1" href="#">★外机风机或压缩机不运行，检查外机风机或压缩机在主板上的接线是否正常或者线是否断开</a></li>
+                <!-- 5 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-5-1-2-2" href="#">★外机风机、压缩机运行。查外机压力是否足够，是否有冷媒不足</a></li>
+            </ul>
+            <!--4 外机风机或压缩机不运行，检查外机风机或压缩机在主板上的接线是否正常或者线是否断开 -->
+            <ul data-menu="submenu-5-1-1-1" class="menu__level">
+                <!-- 12 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-5-1-1-1-1" href="#">★接线正常。上电开机运行观察外机指示灯闪烁是否正常：指示灯闪烁次数是否指示有故障或限频</a></li>
+            </ul>
+            <!-- 12 接线正常。上电开机运行观察外机指示灯闪烁是否正常：指示灯闪烁次数是否指示有故障或限频-->
+            <ul data-menu="submenu-5-1-1-1-1" class="menu__level">
+                <!-- 14 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★指示灯闪烁指示无故障和限频。检查或更换外风机或压缩机</a></li>
+                <!-- 15 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★指示灯闪烁指示有故障或限频，根据指示的故障查找原因</a></li>
+            </ul>
+
+            <!--5 外机风机、压缩机运行。查外机压力是否足够，是否有冷媒不足 -->
+            <ul data-menu="submenu-5-1-2-2" class="menu__level">
+                <!-- 6 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-5-1-2-2-1" href="#">★冷媒不足，检查内外机连接管是否被损坏是否漏气；检查连接管与内机、外机连接处是否漏气</a></li>
+                <!-- 8 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-5-1-2-2-2" href="#">★外机压力足够，没有冷媒不足。观察外机指示灯闪烁是否正常：指示灯闪烁次数是否指示有故障或限频</a></li>
+            </ul>
+            <!--6 冷媒不足，检查内外机连接管是否被损坏是否漏气；检查连接管与内机、外机连接处是否漏气 -->
+            <ul data-menu="submenu-5-1-2-2-1" class="menu__level">
+                <!-- 7 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★连接管正常，补充或重灌冷媒</a></li>
+            </ul>
+            <!--8 外机压力足够，没有冷媒不足。观察外机指示灯闪烁是否正常：指示灯闪烁次数是否指示有故障或限频 -->
+            <ul data-menu="submenu-5-1-2-2-2" class="menu__level">
+                <!-- 13 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★指示灯闪烁指示有故障或限频，根据指示的故障查找原因</a></li>
+                <!-- 9 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-5-1-2-2-2-1" href="#">★外机指示灯指示无故障和无限频。检查四通阀接线是否正常，测量四通阀两接线间电压。（如果用的是电子膨胀阀，检查电子膨胀阀接线是否正常；接线正常更换外机主板；更换外机主板仍有故障，更换电子膨胀阀）</a></li>
+            </ul>
+            <!--9 外机指示灯指示无故障和无限频。检查四通阀接线是否正常，测量四通阀两接线间电压。（如果用的是电子膨胀阀，检查电子膨胀阀接线是否正常；接线正常更换外机主板；更换外机主板仍有故障，更换电子膨胀阀） -->
+            <ul data-menu="submenu-5-1-2-2-2-1" class="menu__level">
+                <!-- 10 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★四通阀两接线间电压为0V。检查或更换四通阀</a></li>
+                <!-- 11 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" href="#">★四通阀两接线间电压在210VAC ~250VAC之间。更换外机主板</a></li>
+            </ul>
+
+            <!-- Submenu 6 *********************************************************** -->
+            <ul data-menu="submenu-6" class="menu__level">
+                <!-- 0 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-6-1" href="#">★观察保护发生时的现象：重复发生保护的时间有多长，有没有规律；室外室内温度多高（室外温度过高建议给外机做遮阳板）；保护前压缩机是否正常运行，运行了多长时间；保护前制冷或制热效果是否不好。检查内机过滤网是否积满灰尘（积满灰尘需清洗过滤网）；检查内外机进风口是否被堵；内外风机是否运转正常</a></li>
+            </ul>
+
+            <ul data-menu="submenu-6-1" class="menu__level">
+                <!-- 4 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-6-1-1" href="#">★断电打开外机盖查看压缩机线顺序是否正确；压缩机线是否有损坏；查看IPM螺钉是否打紧</a></li>
+                <!-- 6 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-6-1-2" href="#">★开机运行，5min后测量主板直流母线电压是否280V~330V间。低于280V为PFC不启动</a></li>
+                <!-- 12 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-6-1-3" href="#">★拔掉压缩机线，上电开机运行，1min后测量主板上U\V\W三相对主板地的DC电压（一般为140V左右）。如果某相电压和另两相相差太大（例如两相都是140V左右，有一相只有40V左右），即此相输出不正常，IPM损坏</a></li>
+                <!-- 1 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-6-1-4" href="#">★查看内外风机是否运转；内外机进风口是否被堵；连接管阀门是否打开</a></li>
+                <!-- 8 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-6-1-5" href="#">★如果H5能很快复现，拔掉压缩机线，上电开机运行看是否会出现H5</a></li>
+            </ul>
+            <!-- 4 断电打开外机盖查看压缩机线顺序是否正确；压缩机线是否有损坏；查看IPM螺钉是否打紧-->
+            <ul data-menu="submenu-6-1-1" class="menu__level">
+                <!-- 5 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" >★上电运行。依然H5</a></li>
+            </ul>
+            <!-- 6 开机运行，5min后测量主板直流母线电压是否280V-->
+            <ul data-menu="submenu-6-1-2" class="menu__level">
+                <!-- 7 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link">★PFC不启动，更换外机主板</a></li>
+            </ul>
+            <!-- 12 拔掉压缩机线，上电开机运行，1min后测量主板上U-->
+            <ul data-menu="submenu-6-1-3" class="menu__level">
+                <!-- 13 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link">★IPM损坏，更换外机主板</a></li>
+            </ul>
+            <!-- 1 查看内外风机是否运转；内外机进风口是否被堵；连接管阀门是否打开-->
+            <ul data-menu="submenu-6-1-4" class="menu__level">
+                <!-- 2 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-6-1-4-1">★如果内外风机不转；查看风机在主板上的接线是否插好、是否有断裂</a></li>
+            </ul>
+            <!-- 8 拔掉压缩机线，上电开机运行，1min后测量主板上U-->
+            <ul data-menu="submenu-6-1-5" class="menu__level">
+                <!-- 9 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link">★会出现H5，主板故障，更换外机电器盒</a></li>
+                <!-- 10 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link" data-submenu="submenu-6-1-5-1">★不会出现H5，可能是系统问题</a></li>
+            </ul>
+            <!-- 2 如果内外风机不转；查看风机在主板上的接线是否插好、是否有断裂 -->
+            <ul data-menu="submenu-6-1-4-1" class="menu__level">
+                <!-- 3 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link">★如果接线正常、内外风机不转，更换主板</a></li>
+            </ul>
+            <!-- 10 不会出现H5，可能是系统问题 -->
+            <ul data-menu="submenu-6-1-5-1" class="menu__level">
+                <!-- 11 -->
+                <li class="menu__item"><a style="line-height:150%" class="menu__link">★更换新电器盒，更换后仍出现H5，查系统或连接管或压缩机</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+
+        <script src="classie.js"></script>
+        <script src="main.js"></script>
+        <script>
+    (function() {
+            var menuEl = document.getElementById('ml-menu1'),
+                mlmenu = new MLMenu(menuEl, {
+                    // breadcrumbsCtrl : true, // show breadcrumbs
+                    // initialBreadcrumb : 'all', // initial breadcrumb text
+                    backCtrl : true, // show back button
+                    // itemsDelayInterval : 60, // delay between each menu item sliding animation
+                    // onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+                });
+
+            // mobile menu toggle
+            // var openMenuCtrl = document.querySelector('.action--open'),
+            //     closeMenuCtrl = document.querySelector('.action--close');
+
+            // openMenuCtrl.addEventListener('click', openMenu);
+            // closeMenuCtrl.addEventListener('click', closeMenu);
+
+            // function openMenu() {
+            //     classie.add(menuEl, 'menu--open');
+            // }
+
+            // function closeMenu() {
+            //     classie.remove(menuEl, 'menu--open');
+            // }
+
+            // simulate grid content loading
+            // var gridWrapper = document.querySelector('.content');
+
+            // function loadDummyData(ev, itemName) {
+            //     ev.preventDefault();//防止默认行为
+            //     console.log("loadDummyData");
+                // closeMenu();
+                // gridWrapper.innerHTML = '';
+                // classie.add(gridWrapper, 'content--loading');
+                // setTimeout(function() {
+                //     classie.remove(gridWrapper, 'content--loading');
+                //     gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
+                // }, 700);
+            // }
+        })();
+
+        </script>
+    </body>
+
+</html>
